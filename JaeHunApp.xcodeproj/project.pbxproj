@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02DB17F6DB3B3828FD757FA0 /* Pods_JaeHunApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E518517624300F9480D137BF /* Pods_JaeHunApp.framework */; };
 		30AC3FA129248371005853A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FA029248371005853A8 /* AppDelegate.swift */; };
 		30AC3FA329248371005853A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FA229248371005853A8 /* SceneDelegate.swift */; };
 		30AC3FA529248371005853A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FA429248371005853A8 /* ViewController.swift */; };
@@ -26,6 +27,9 @@
 		30AC3FAC29248372005853A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30AC3FAF29248372005853A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30AC3FB129248372005853A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F5FFD6C3B22CC199F7A6B4B /* Pods-JaeHunApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JaeHunApp.release.xcconfig"; path = "Target Support Files/Pods-JaeHunApp/Pods-JaeHunApp.release.xcconfig"; sourceTree = "<group>"; };
+		9DB724DF128DECB7967B0A06 /* Pods-JaeHunApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JaeHunApp.debug.xcconfig"; path = "Target Support Files/Pods-JaeHunApp/Pods-JaeHunApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E518517624300F9480D137BF /* Pods_JaeHunApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JaeHunApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02DB17F6DB3B3828FD757FA0 /* Pods_JaeHunApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				30AC3F9F29248371005853A8 /* JaeHunApp */,
 				30AC3F9E29248371005853A8 /* Products */,
+				F4BAF9B1E0896D915B87979E /* Pods */,
+				6795D96DE5AB46C2DB0E2B85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +109,24 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		6795D96DE5AB46C2DB0E2B85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E518517624300F9480D137BF /* Pods_JaeHunApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4BAF9B1E0896D915B87979E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DB724DF128DECB7967B0A06 /* Pods-JaeHunApp.debug.xcconfig */,
+				8F5FFD6C3B22CC199F7A6B4B /* Pods-JaeHunApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +134,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30AC3FB429248372005853A8 /* Build configuration list for PBXNativeTarget "JaeHunApp" */;
 			buildPhases = (
+				587557D2EC2D3F183581C019 /* [CP] Check Pods Manifest.lock */,
 				30AC3F9929248371005853A8 /* Sources */,
 				30AC3F9A29248371005853A8 /* Frameworks */,
 				30AC3F9B29248371005853A8 /* Resources */,
@@ -167,6 +193,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		587557D2EC2D3F183581C019 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JaeHunApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		30AC3F9929248371005853A8 /* Sources */ = {
@@ -318,6 +369,7 @@
 		};
 		30AC3FB529248372005853A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DB724DF128DECB7967B0A06 /* Pods-JaeHunApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -346,6 +398,7 @@
 		};
 		30AC3FB629248372005853A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F5FFD6C3B22CC199F7A6B4B /* Pods-JaeHunApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
