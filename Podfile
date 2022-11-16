@@ -6,5 +6,6 @@ target 'JaeHunApp' do
   use_frameworks!
 
   # Pods for JaeHunApp
+    pod 'SnapKit', '~> 5.6.0'
 
 end

@@ -15,6 +15,12 @@
 		30AC3FAB29248371005853A8 /* JaeHunApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FA929248371005853A8 /* JaeHunApp.xcdatamodeld */; };
 		30AC3FAD29248372005853A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30AC3FAC29248372005853A8 /* Assets.xcassets */; };
 		30AC3FB029248372005853A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30AC3FAE29248372005853A8 /* LaunchScreen.storyboard */; };
+		30AC3FBC2924912B005853A8 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FBB2924912B005853A8 /* TabbarViewController.swift */; };
+		30AC3FBE292491AD005853A8 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FBD292491AD005853A8 /* OneViewController.swift */; };
+		30AC3FC0292491DE005853A8 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FBF292491DE005853A8 /* TwoViewController.swift */; };
+		30AC3FC22924920B005853A8 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FC12924920B005853A8 /* ThreeViewController.swift */; };
+		30AC3FC42924922A005853A8 /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FC32924922A005853A8 /* FourViewController.swift */; };
+		30AC3FC62924931E005853A8 /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FC52924931E005853A8 /* FiveViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +33,12 @@
 		30AC3FAC29248372005853A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30AC3FAF29248372005853A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30AC3FB129248372005853A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30AC3FBB2924912B005853A8 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		30AC3FBD292491AD005853A8 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
+		30AC3FBF292491DE005853A8 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		30AC3FC12924920B005853A8 /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
+		30AC3FC32924922A005853A8 /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
+		30AC3FC52924931E005853A8 /* FiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
 		8F5FFD6C3B22CC199F7A6B4B /* Pods-JaeHunApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JaeHunApp.release.xcconfig"; path = "Target Support Files/Pods-JaeHunApp/Pods-JaeHunApp.release.xcconfig"; sourceTree = "<group>"; };
 		9DB724DF128DECB7967B0A06 /* Pods-JaeHunApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JaeHunApp.debug.xcconfig"; path = "Target Support Files/Pods-JaeHunApp/Pods-JaeHunApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E518517624300F9480D137BF /* Pods_JaeHunApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JaeHunApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +96,12 @@
 			isa = PBXGroup;
 			children = (
 				30AC3FA429248371005853A8 /* ViewController.swift */,
+				30AC3FBB2924912B005853A8 /* TabbarViewController.swift */,
+				30AC3FBD292491AD005853A8 /* OneViewController.swift */,
+				30AC3FBF292491DE005853A8 /* TwoViewController.swift */,
+				30AC3FC12924920B005853A8 /* ThreeViewController.swift */,
+				30AC3FC32924922A005853A8 /* FourViewController.swift */,
+				30AC3FC52924931E005853A8 /* FiveViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -123,7 +141,6 @@
 				9DB724DF128DECB7967B0A06 /* Pods-JaeHunApp.debug.xcconfig */,
 				8F5FFD6C3B22CC199F7A6B4B /* Pods-JaeHunApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -138,6 +155,7 @@
 				30AC3F9929248371005853A8 /* Sources */,
 				30AC3F9A29248371005853A8 /* Frameworks */,
 				30AC3F9B29248371005853A8 /* Resources */,
+				240306E2639B6021509C2156 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +213,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		240306E2639B6021509C2156 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JaeHunApp/Pods-JaeHunApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JaeHunApp/Pods-JaeHunApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JaeHunApp/Pods-JaeHunApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		587557D2EC2D3F183581C019 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -224,10 +259,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30AC3FC62924931E005853A8 /* FiveViewController.swift in Sources */,
 				30AC3FA529248371005853A8 /* ViewController.swift in Sources */,
 				30AC3FA129248371005853A8 /* AppDelegate.swift in Sources */,
 				30AC3FAB29248371005853A8 /* JaeHunApp.xcdatamodeld in Sources */,
+				30AC3FC22924920B005853A8 /* ThreeViewController.swift in Sources */,
+				30AC3FBE292491AD005853A8 /* OneViewController.swift in Sources */,
+				30AC3FC0292491DE005853A8 /* TwoViewController.swift in Sources */,
+				30AC3FBC2924912B005853A8 /* TabbarViewController.swift in Sources */,
 				30AC3FA329248371005853A8 /* SceneDelegate.swift in Sources */,
+				30AC3FC42924922A005853A8 /* FourViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
