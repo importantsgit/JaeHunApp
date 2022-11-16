@@ -10,7 +10,7 @@ import UIKit
 class TabbarViewController: UITabBarController {
     private lazy var oneVC: UIViewController = {
         let viewController = UINavigationController(rootViewController: OneViewController())
-        let tabBarItem = UITabBarItem(title: "홈", image: UIImage(named: "house_select"), tag: 0)
+        let tabBarItem = UITabBarItem(title: "홈", image: UIImage(named: "map"), tag: 0)
         viewController.tabBarItem = tabBarItem
         
         
@@ -19,7 +19,7 @@ class TabbarViewController: UITabBarController {
     
     private lazy var twoVC: UIViewController = {
         let viewController = UINavigationController(rootViewController: TwoViewController())
-        let tabBarItem = UITabBarItem(title: "커뮤니티", image: UIImage(named: "com_select"), tag: 1)
+        let tabBarItem = UITabBarItem(title: "커뮤니티", image: UIImage(named: "camera"), tag: 1)
         viewController.tabBarItem = tabBarItem
         
         
@@ -28,7 +28,7 @@ class TabbarViewController: UITabBarController {
     
     private lazy var threeVC: UIViewController = {
         let viewController = UINavigationController(rootViewController: ThreeViewController())
-        let tabBarItem = UITabBarItem(title: "문제 클라우드", image: UIImage(named: "problem_select"), tag: 3)
+        let tabBarItem = UITabBarItem(title: "문제 클라우드", image: UIImage(named: "upload"), tag: 3)
         viewController.tabBarItem = tabBarItem
         
         
@@ -46,7 +46,7 @@ class TabbarViewController: UITabBarController {
     
     private lazy var fiveVC: UIViewController = {
         let viewController = UINavigationController(rootViewController: FiveViewController())
-        let tabBarItem = UITabBarItem(title: "내 정보", image: UIImage(named: "profile_select"), tag: 4)
+        let tabBarItem = UITabBarItem(title: "내 정보", image: UIImage(named: "profile_select"), tag: 5)
         viewController.tabBarItem = tabBarItem
         
         
@@ -56,10 +56,17 @@ class TabbarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewControllers = [oneVC, twoVC ,threeVC, fourVC, fiveVC]
+        view.backgroundColor = .systemBackground
+        tabBarLayout()
     }
 }
 
 extension TabbarViewController {
-    
+    func tabBarLayout() {
+        self.tabBar.isTranslucent = false
+        self.tabBar.backgroundColor = .systemBackground
+        UITabBar.clearShadow()
+        tabBar.layer.applyShadow(color: .gray, alpha: 0.3, x: 0, y: 0, blur: 12)
+    }
     
 }

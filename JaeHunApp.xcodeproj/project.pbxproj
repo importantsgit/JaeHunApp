@@ -21,6 +21,9 @@
 		30AC3FC22924920B005853A8 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FC12924920B005853A8 /* ThreeViewController.swift */; };
 		30AC3FC42924922A005853A8 /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FC32924922A005853A8 /* FourViewController.swift */; };
 		30AC3FC62924931E005853A8 /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FC52924931E005853A8 /* FiveViewController.swift */; };
+		30AC3FC82924A281005853A8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FC72924A281005853A8 /* MapView.swift */; };
+		30AC3FCA2924A4CE005853A8 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FC92924A4CE005853A8 /* Shadow.swift */; };
+		30AC3FCC2924AAA0005853A8 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FCB2924AAA0005853A8 /* Artwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		30AC3FC12924920B005853A8 /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
 		30AC3FC32924922A005853A8 /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
 		30AC3FC52924931E005853A8 /* FiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
+		30AC3FC72924A281005853A8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		30AC3FC92924A4CE005853A8 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		30AC3FCB2924AAA0005853A8 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		8F5FFD6C3B22CC199F7A6B4B /* Pods-JaeHunApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JaeHunApp.release.xcconfig"; path = "Target Support Files/Pods-JaeHunApp/Pods-JaeHunApp.release.xcconfig"; sourceTree = "<group>"; };
 		9DB724DF128DECB7967B0A06 /* Pods-JaeHunApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JaeHunApp.debug.xcconfig"; path = "Target Support Files/Pods-JaeHunApp/Pods-JaeHunApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E518517624300F9480D137BF /* Pods_JaeHunApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JaeHunApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +115,8 @@
 		30AC3FB829248438005853A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				30AC3FC72924A281005853A8 /* MapView.swift */,
+				30AC3FC92924A4CE005853A8 /* Shadow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,6 +124,7 @@
 		30AC3FB929248458005853A8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				30AC3FCB2924AAA0005853A8 /* Artwork.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -262,11 +271,14 @@
 				30AC3FC62924931E005853A8 /* FiveViewController.swift in Sources */,
 				30AC3FA529248371005853A8 /* ViewController.swift in Sources */,
 				30AC3FA129248371005853A8 /* AppDelegate.swift in Sources */,
+				30AC3FC82924A281005853A8 /* MapView.swift in Sources */,
 				30AC3FAB29248371005853A8 /* JaeHunApp.xcdatamodeld in Sources */,
 				30AC3FC22924920B005853A8 /* ThreeViewController.swift in Sources */,
 				30AC3FBE292491AD005853A8 /* OneViewController.swift in Sources */,
+				30AC3FCC2924AAA0005853A8 /* Artwork.swift in Sources */,
 				30AC3FC0292491DE005853A8 /* TwoViewController.swift in Sources */,
 				30AC3FBC2924912B005853A8 /* TabbarViewController.swift in Sources */,
+				30AC3FCA2924A4CE005853A8 /* Shadow.swift in Sources */,
 				30AC3FA329248371005853A8 /* SceneDelegate.swift in Sources */,
 				30AC3FC42924922A005853A8 /* FourViewController.swift in Sources */,
 			);
@@ -424,6 +436,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +466,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
