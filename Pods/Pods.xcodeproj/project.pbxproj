@@ -115,8 +115,8 @@
 		8CC11324F76C6F9625CE46F786A04C5A /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
 		9221A0EBF4CE0A218EF418A1E6349B27 /* PullUpControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PullUpControl.swift; path = SOPullUpView/Classes/PullUpControl.swift; sourceTree = "<group>"; };
 		93518CEC4A5833879C816323D5AA4FC8 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
-		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		979486118B3E90C08386079D57962701 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F1C647721CDE7766784BAFBE765AEBA /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Sources/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
 		9FBD14ACF6400F9943AF4C0C9B614518 /* SOPullUpView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SOPullUpView-dummy.m"; sourceTree = "<group>"; };
 		A0009806B55AEC6B843062AC0415D070 /* Pods-JaeHunApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JaeHunApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 		BCF2740216FA928E965D3C297835F0BB /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Sources/Constraint.swift; sourceTree = "<group>"; };
 		C15BF14011855F9FA2887DEA2DB4E2FC /* Pods-JaeHunApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JaeHunApp-Info.plist"; sourceTree = "<group>"; };
 		C5407AC23F799B0C79E8CF18C5D3E7DE /* PullUpController+Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PullUpController+Animation.swift"; path = "SOPullUpView/Classes/PullUpController+Animation.swift"; sourceTree = "<group>"; };
-		C7A90F89E2732CA4176620ACFA4C47CD /* SOPullUpView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SOPullUpView; path = SOPullUpView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7A90F89E2732CA4176620ACFA4C47CD /* SOPullUpView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SOPullUpView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF191647441062D9C070DEC5EA6784DB /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Sources/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
 		D8062E45ACF7B8CFFB666AE8A8A8DD6B /* Pods-JaeHunApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JaeHunApp-umbrella.h"; sourceTree = "<group>"; };
 		DC3713A981500FE04632DBB7CACAB674 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Sources/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
@@ -258,7 +258,6 @@
 				F76BD17FFA4E214163475B83A94BE475 /* UILayoutSupport+Extensions.swift */,
 				5A068D95A59D5C92FA4029EEFEE3C227 /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -322,7 +321,6 @@
 				68BF1DA280C1C1B796D7FECA0A51B770 /* SOPullUpViewDelegate.swift */,
 				9676ED4D7421D26A2D65E6FA31E321AB /* Support Files */,
 			);
-			name = SOPullUpView;
 			path = SOPullUpView;
 			sourceTree = "<group>";
 		};
@@ -330,8 +328,8 @@
 			isa = PBXGroup;
 			children = (
 				ABBBCFE43731614FB4A6F44EEDEE37A0 /* Pods-JaeHunApp */,
-				979486118B3E90C08386079D57962701 /* SnapKit */,
-				C7A90F89E2732CA4176620ACFA4C47CD /* SOPullUpView */,
+				979486118B3E90C08386079D57962701 /* SnapKit.framework */,
+				C7A90F89E2732CA4176620ACFA4C47CD /* SOPullUpView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -381,7 +379,7 @@
 			);
 			name = SnapKit;
 			productName = SnapKit;
-			productReference = 979486118B3E90C08386079D57962701 /* SnapKit */;
+			productReference = 979486118B3E90C08386079D57962701 /* SnapKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		45EF5696B7EEB12C79AD0188FFF35D04 /* Pods-JaeHunApp */ = {
@@ -419,7 +417,7 @@
 			);
 			name = SOPullUpView;
 			productName = SOPullUpView;
-			productReference = C7A90F89E2732CA4176620ACFA4C47CD /* SOPullUpView */;
+			productReference = C7A90F89E2732CA4176620ACFA4C47CD /* SOPullUpView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -702,7 +700,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SOPullUpView/SOPullUpView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SOPullUpView/SOPullUpView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -738,7 +736,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -811,7 +809,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -845,7 +843,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SOPullUpView/SOPullUpView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SOPullUpView/SOPullUpView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
