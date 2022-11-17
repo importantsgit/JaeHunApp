@@ -12,15 +12,29 @@ class TwoViewController: UIViewController {
     
     private lazy var button: UIButton = {
         let button = UIButton()
-        button.setTitle("바코드 인식하기", for: .normal)
+        button.setTitle("QR코드 인식하기", for: .normal)
         button.backgroundColor = .blue
         button.addTarget(self, action: #selector(buttonTap), for: .touchUpInside)
         return button
     }()
+    
+    private var titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "QR코드 감별기"
+        label.numberOfLines = 0
+        label.font = UIFont.systemFont(ofSize: 36, weight: .bold)
+        
+        return label
+    }()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
     override func viewDidLoad() {
         setupLayout()
         title = "카메라"
-        navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
 
@@ -28,9 +42,14 @@ extension TwoViewController {
     private func setupLayout() {
         view.backgroundColor = .systemBackground
         
-        [button].forEach {
+        [titleLabel, button ].forEach {
             view.addSubview($0)
         }
+        
+        titleLabel.snp.makeConstraints{
+            $0.center.equalToSuperview()
+        }
+        
         button.snp.makeConstraints{
             $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(32)
             $0.leading.equalToSuperview().offset(16)

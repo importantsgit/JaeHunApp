@@ -38,6 +38,7 @@ class OneViewController: UIViewController {
 
 extension OneViewController {
     private func setupLayout() {
+        title = "지도"
         self.view.addSubview(mapView)
         mapView.snp.makeConstraints{
             $0.top.bottom.leading.trailing.equalToSuperview()

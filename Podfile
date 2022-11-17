@@ -8,5 +8,6 @@ target 'JaeHunApp' do
   # Pods for JaeHunApp
     pod 'SnapKit', '~> 5.6.0'
     pod 'SOPullUpView'
+    pod 'Kingfisher', '~> 7.0'
 
 end
