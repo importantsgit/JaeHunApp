@@ -15,6 +15,8 @@ class TwoViewController: UIViewController {
         button.setTitle("QR코드 인식하기", for: .normal)
         button.backgroundColor = .blue
         button.addTarget(self, action: #selector(buttonTap), for: .touchUpInside)
+        button.titleLabel?.font = .boldSystemFont(ofSize: 16)
+
         return button
     }()
     

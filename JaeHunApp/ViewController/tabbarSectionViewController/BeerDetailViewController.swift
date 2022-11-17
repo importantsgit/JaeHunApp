@@ -13,10 +13,7 @@ class BeerDetailViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage()
-        navigationController?.navigationBar.isTranslucent = true
-        navigationController?.view.backgroundColor = .clear
+        navigationItem.largeTitleDisplayMode = .always
         
         title = beer?.name ?? "이름 없는 맥주"
         
@@ -24,12 +21,15 @@ class BeerDetailViewController: UITableViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "BeerDetailListCell")
         tableView.rowHeight = UITableView.automaticDimension
         tableView.showsVerticalScrollIndicator = false
+        tableView.preservesSuperviewLayoutMargins = true
+        tableView.contentInset = UIEdgeInsets(top: 30.0, left: 0, bottom: 0, right: 0)
+        tableView.backgroundColor = .systemBackground
         
         let headerView = UIImageView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 300))
         let imageURL = URL(string: beer?.imageURL ?? "")
         headerView.contentMode = .scaleAspectFit
-        headerView.kf.setImage(with: imageURL,placeholder: UIImage(named: "drink")
-                               ,options: [.transition(.fade(0.5)),  .forceTransition])
+        headerView.kf.setImage(with: imageURL
+                               ,options: [.transition(.fade(2)),  .forceTransition])
         tableView.tableHeaderView = headerView
     }
 }

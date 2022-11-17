@@ -17,17 +17,20 @@ class Artwork: NSObject, MKAnnotation { // MKAnnotation -> 마커
     let locationName: String?
     let discipline: String?
     let coordinate: CLLocationCoordinate2D
+    let imagefile: String?
     
     init(
         title: String?,
         locationName: String?,
         discipline: String?,
-        coordinate: CLLocationCoordinate2D
+        coordinate: CLLocationCoordinate2D,
+        imagefile: String?
     ){
         self.title = title
         self.locationName = locationName
         self.discipline = discipline
         self.coordinate = coordinate
+        self.imagefile = imagefile
         
         super.init()
     }
@@ -48,6 +51,7 @@ class Artwork: NSObject, MKAnnotation { // MKAnnotation -> 마커
         locationName = properties["location"] as? String
         discipline = properties["discipline"] as? String
         coordinate = point.coordinate
+        imagefile = properties["imagefile"] as? String
         super.init()
     }
     

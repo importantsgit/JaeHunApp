@@ -103,6 +103,7 @@ extension ThreeViewController {
         let selectedBeer = beerList[indexPath.row]
         let vc = BeerDetailViewController()
         vc.beer = selectedBeer
+        vc.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(vc, animated: true)
     }
 }

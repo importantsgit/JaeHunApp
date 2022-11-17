@@ -28,7 +28,7 @@ class TabbarViewController: UITabBarController {
     
     private lazy var threeVC: UIViewController = {
         let viewController = UINavigationController(rootViewController: ThreeViewController())
-        let tabBarItem = UITabBarItem(title: "문제 클라우드", image: UIImage(named: "upload"), tag: 3)
+        let tabBarItem = UITabBarItem(title: "문제 클라우드", image: UIImage(named: "drink"), tag: 3)
         viewController.tabBarItem = tabBarItem
         
         
@@ -65,6 +65,7 @@ extension TabbarViewController {
     func tabBarLayout() {
         self.tabBar.isTranslucent = false
         self.tabBar.backgroundColor = .systemBackground
+        self.tabBar.tintColor = .black
         UITabBar.clearShadow()
         tabBar.layer.applyShadow(color: .gray, alpha: 0.3, x: 0, y: 0, blur: 12)
     }

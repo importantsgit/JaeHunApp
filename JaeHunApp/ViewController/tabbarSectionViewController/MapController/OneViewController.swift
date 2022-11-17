@@ -38,7 +38,7 @@ class OneViewController: UIViewController {
 
 extension OneViewController {
     private func setupLayout() {
-        title = "지도"
+        title = "Map"
         self.view.addSubview(mapView)
         mapView.snp.makeConstraints{
             $0.top.bottom.leading.trailing.equalToSuperview()
@@ -86,6 +86,7 @@ extension OneViewController: SOPullUpViewDataSource  {
     
     func pullUpViewController() -> UIViewController {
         let vc = MapPullUpController()
+        vc.artworks = artworks
         vc.pullUpControl = self.pullUpControl
         
         return vc
