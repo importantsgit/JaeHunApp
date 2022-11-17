@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Alamofire.xcscheme</key>
+		<key>Pods-JaeHunApp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-JaeHunApp.xcscheme</key>
+		<key>SOPullUpView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

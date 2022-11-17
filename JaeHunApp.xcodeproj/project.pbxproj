@@ -27,6 +27,7 @@
 		30DE7DCB2925E26A00AC2450 /* Public Art.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 30DE7DCA2925E26A00AC2450 /* Public Art.geojson */; };
 		30DE7DCD2925E84600AC2450 /* ArtWorkViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DE7DCC2925E84600AC2450 /* ArtWorkViews.swift */; };
 		30DE7DCF2925F3D200AC2450 /* ArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DE7DCE2925F3D200AC2450 /* ArtworkView.swift */; };
+		30DE7DD329260C9F00AC2450 /* MapPullUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DE7DD229260C9F00AC2450 /* MapPullUpController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		30DE7DCA2925E26A00AC2450 /* Public Art.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Public Art.geojson"; sourceTree = "<group>"; };
 		30DE7DCC2925E84600AC2450 /* ArtWorkViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWorkViews.swift; sourceTree = "<group>"; };
 		30DE7DCE2925F3D200AC2450 /* ArtworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkView.swift; sourceTree = "<group>"; };
+		30DE7DD229260C9F00AC2450 /* MapPullUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPullUpController.swift; sourceTree = "<group>"; };
 		8F5FFD6C3B22CC199F7A6B4B /* Pods-JaeHunApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JaeHunApp.release.xcconfig"; path = "Target Support Files/Pods-JaeHunApp/Pods-JaeHunApp.release.xcconfig"; sourceTree = "<group>"; };
 		9DB724DF128DECB7967B0A06 /* Pods-JaeHunApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JaeHunApp.debug.xcconfig"; path = "Target Support Files/Pods-JaeHunApp/Pods-JaeHunApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E518517624300F9480D137BF /* Pods_JaeHunApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JaeHunApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,11 +111,7 @@
 			children = (
 				30AC3FA429248371005853A8 /* ViewController.swift */,
 				30AC3FBB2924912B005853A8 /* TabbarViewController.swift */,
-				30AC3FBD292491AD005853A8 /* OneViewController.swift */,
-				30AC3FBF292491DE005853A8 /* TwoViewController.swift */,
-				30AC3FC12924920B005853A8 /* ThreeViewController.swift */,
-				30AC3FC32924922A005853A8 /* FourViewController.swift */,
-				30AC3FC52924931E005853A8 /* FiveViewController.swift */,
+				30DE7DD529261CE000AC2450 /* tabbarSectionViewController */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -143,6 +141,35 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		30DE7DD429261CC800AC2450 /* MapController */ = {
+			isa = PBXGroup;
+			children = (
+				30AC3FBD292491AD005853A8 /* OneViewController.swift */,
+				30DE7DD229260C9F00AC2450 /* MapPullUpController.swift */,
+			);
+			path = MapController;
+			sourceTree = "<group>";
+		};
+		30DE7DD529261CE000AC2450 /* tabbarSectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				30DE7DD629261D1400AC2450 /* Camera */,
+				30AC3FC12924920B005853A8 /* ThreeViewController.swift */,
+				30AC3FC32924922A005853A8 /* FourViewController.swift */,
+				30AC3FC52924931E005853A8 /* FiveViewController.swift */,
+				30DE7DD429261CC800AC2450 /* MapController */,
+			);
+			path = tabbarSectionViewController;
+			sourceTree = "<group>";
+		};
+		30DE7DD629261D1400AC2450 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				30AC3FBF292491DE005853A8 /* TwoViewController.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 		6795D96DE5AB46C2DB0E2B85 /* Frameworks */ = {
@@ -283,6 +310,7 @@
 				30AC3FA129248371005853A8 /* AppDelegate.swift in Sources */,
 				30DE7DCD2925E84600AC2450 /* ArtWorkViews.swift in Sources */,
 				30AC3FC82924A281005853A8 /* MapView.swift in Sources */,
+				30DE7DD329260C9F00AC2450 /* MapPullUpController.swift in Sources */,
 				30AC3FAB29248371005853A8 /* JaeHunApp.xcdatamodeld in Sources */,
 				30DE7DCF2925F3D200AC2450 /* ArtworkView.swift in Sources */,
 				30AC3FC22924920B005853A8 /* ThreeViewController.swift in Sources */,

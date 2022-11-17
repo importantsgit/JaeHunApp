@@ -8,18 +8,31 @@
 import UIKit
 import SnapKit
 import MapKit
-import Alamofire
+import SOPullUpView
 
 class OneViewController: UIViewController {
     private var mapView = MapView()
+
+    var bottomPadding: CGFloat {
+        let scenes = UIApplication.shared.connectedScenes
+        let windowScene = scenes.first as? UIWindowScene
+        let window = windowScene?.windows.first
+        return window?.safeAreaInsets.top ?? 0.0
+    }
     
     var artworks: [Artwork] = []
+    
+    let pullUpControl = SOPullUpControl()
+
     
     override func viewDidLoad() {
         setupLayout()
         mapView.setup()
         fetchLocation()
         mapView.addArtWork(artworks: artworks)
+        pullUpControl.dataSource = self
+        pullUpControl.setupCard(from: view)
+
     }
 }
 
@@ -29,6 +42,8 @@ extension OneViewController {
         mapView.snp.makeConstraints{
             $0.top.bottom.leading.trailing.equalToSuperview()
         }
+
+
     }
     
     //MARK: Add Location -> Decoding File
@@ -55,6 +70,24 @@ extension OneViewController {
             print("Unexpected error: \(error).")
         }
         
+    }
+}
+
+extension OneViewController: SOPullUpViewDataSource  {
+    
+    func pullUpViewCollapsedViewHeight() -> CGFloat {
+         return bottomPadding + 60
+    }
+    
+    func pullUpViewExpandedViewHeight() -> CGFloat {
+        return view.frame.height - 100
+    }
+    
+    func pullUpViewController() -> UIViewController {
+        let vc = MapPullUpController()
+        vc.pullUpControl = self.pullUpControl
+        
+        return vc
     }
 }
 

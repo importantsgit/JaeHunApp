@@ -10,7 +10,7 @@ import UIKit
 class TabbarViewController: UITabBarController {
     private lazy var oneVC: UIViewController = {
         let viewController = UINavigationController(rootViewController: OneViewController())
-        let tabBarItem = UITabBarItem(title: "홈", image: UIImage(named: "map"), tag: 0)
+        let tabBarItem = UITabBarItem(title: "지도", image: UIImage(named: "map"), tag: 0)
         viewController.tabBarItem = tabBarItem
         
         
@@ -19,7 +19,7 @@ class TabbarViewController: UITabBarController {
     
     private lazy var twoVC: UIViewController = {
         let viewController = UINavigationController(rootViewController: TwoViewController())
-        let tabBarItem = UITabBarItem(title: "커뮤니티", image: UIImage(named: "camera"), tag: 1)
+        let tabBarItem = UITabBarItem(title: "카메라", image: UIImage(named: "camera"), tag: 1)
         viewController.tabBarItem = tabBarItem
         
         

@@ -1,20 +1,20 @@
 PODS:
-  - Alamofire (5.6.2)
   - SnapKit (5.6.0)
+  - SOPullUpView (1.1.0)
 
 DEPENDENCIES:
-  - Alamofire
   - SnapKit (~> 5.6.0)
+  - SOPullUpView
 
 SPEC REPOS:
   trunk:
-    - Alamofire
     - SnapKit
+    - SOPullUpView
 
 SPEC CHECKSUMS:
-  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SOPullUpView: a18cab4bdce7cc07c227e705cc4270e0a36ca2fa
 
-PODFILE CHECKSUM: d3e83d1e66612484b37e99e2086bd3c617ae656e
+PODFILE CHECKSUM: 5e7c15fc7e621b95e7fd121d3553f36dd378674c
 
 COCOAPODS: 1.11.3
