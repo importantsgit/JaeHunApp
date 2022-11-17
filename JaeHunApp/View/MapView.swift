@@ -23,11 +23,14 @@ class MapView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: setUp: 호놀룰루 카메라 위치 고정
     func setup() {
         let initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
         map.centerToLocation(initialLocation)
         ConstrainingTheCamera()
         map.delegate = self
+        map.register(ArtworkView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        //MARK: 등록 통하여 새로운 마커를 생성 -> ArtworkViews
     }
     
 }
@@ -47,36 +50,37 @@ extension MapView {
         map.setCameraZoomRange(zoomRange, animated: true)
     }
     
+    //MARK: addArtWork: Marker append
     func addArtWork(artworks: [Artwork]){
         map.addAnnotations(artworks)
     }
 }
 
 extension MapView: MKMapViewDelegate {
-    // 1
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        // 2
-        guard let annotation = annotation as? Artwork else {
-            return nil
-        }
-        // 3
-        let identifier = "artwork"
-        var view: MKMarkerAnnotationView
-        //4
-        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView {
-            dequeuedView.annotation = annotation
-            view = dequeuedView
-        } else {
-            view = MKMarkerAnnotationView(
-                annotation: annotation,
-                reuseIdentifier: identifier
-                )
-            view.canShowCallout = true
-            view.calloutOffset = CGPoint(x: -5, y: 5)
-            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-        }
-        return view
-    }
+    // MARK: 이 부분은 ArtWorkViews로 다시 구현되었습니다.
+//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+//        // 2
+//        guard let annotation = annotation as? Artwork else {
+//            return nil
+//        }
+//        // 3
+//        let identifier = "artwork"
+//        var view: MKMarkerAnnotationView
+//        //4
+//        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView {
+//            dequeuedView.annotation = annotation
+//            view = dequeuedView
+//        } else {
+//            view = MKMarkerAnnotationView(
+//                annotation: annotation,
+//                reuseIdentifier: identifier
+//                )
+//            view.canShowCallout = true
+//            view.calloutOffset = CGPoint(x: -5, y: 5)
+//            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+//        }
+//        return view
+//    }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         guard let artwork = view.annotation as? Artwork else {

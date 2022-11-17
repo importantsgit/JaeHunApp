@@ -72,5 +72,42 @@ class Artwork: NSObject, MKAnnotation { // MKAnnotation -> 마커
     }
     // 네비게이션 사용을 위해 필요
     
+    var markerTintColer: UIColor {
+        switch discipline {
+        case "Monument":
+            return .red
+        case "Mural":
+            return .cyan
+        case "Plaque":
+            return .blue
+        case "Sculpture" :
+            return .purple
+        default:
+            return .green
+        }
+    }
+    
+    //MARK: 마커 안 이미지 바꾸기 / 단 실행이 안됨?
+    var image: UIImage {
+        guard let name = discipline else {
+            return UIImage(named: "location")!
+        }
+        
+        switch name {
+            case "Monument":
+            return UIImage(named: "Monument")!
+            case "Mural":
+                return UIImage(named: "Mural")!
+            case "Plaque":
+                return UIImage(named: "Plaque")!
+            case "Sculpture" :
+                return UIImage(named: "Sculpture")!
+            default:
+                return UIImage(named: "location")!
+        }
+    }
     
 }
+
+
+

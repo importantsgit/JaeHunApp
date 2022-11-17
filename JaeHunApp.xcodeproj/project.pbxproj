@@ -24,6 +24,9 @@
 		30AC3FC82924A281005853A8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FC72924A281005853A8 /* MapView.swift */; };
 		30AC3FCA2924A4CE005853A8 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FC92924A4CE005853A8 /* Shadow.swift */; };
 		30AC3FCC2924AAA0005853A8 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FCB2924AAA0005853A8 /* Artwork.swift */; };
+		30DE7DCB2925E26A00AC2450 /* Public Art.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 30DE7DCA2925E26A00AC2450 /* Public Art.geojson */; };
+		30DE7DCD2925E84600AC2450 /* ArtWorkViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DE7DCC2925E84600AC2450 /* ArtWorkViews.swift */; };
+		30DE7DCF2925F3D200AC2450 /* ArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DE7DCE2925F3D200AC2450 /* ArtworkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,9 @@
 		30AC3FC72924A281005853A8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		30AC3FC92924A4CE005853A8 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
 		30AC3FCB2924AAA0005853A8 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		30DE7DCA2925E26A00AC2450 /* Public Art.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Public Art.geojson"; sourceTree = "<group>"; };
+		30DE7DCC2925E84600AC2450 /* ArtWorkViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWorkViews.swift; sourceTree = "<group>"; };
+		30DE7DCE2925F3D200AC2450 /* ArtworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkView.swift; sourceTree = "<group>"; };
 		8F5FFD6C3B22CC199F7A6B4B /* Pods-JaeHunApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JaeHunApp.release.xcconfig"; path = "Target Support Files/Pods-JaeHunApp/Pods-JaeHunApp.release.xcconfig"; sourceTree = "<group>"; };
 		9DB724DF128DECB7967B0A06 /* Pods-JaeHunApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JaeHunApp.debug.xcconfig"; path = "Target Support Files/Pods-JaeHunApp/Pods-JaeHunApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E518517624300F9480D137BF /* Pods_JaeHunApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JaeHunApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +123,8 @@
 			children = (
 				30AC3FC72924A281005853A8 /* MapView.swift */,
 				30AC3FC92924A4CE005853A8 /* Shadow.swift */,
+				30DE7DCC2925E84600AC2450 /* ArtWorkViews.swift */,
+				30DE7DCE2925F3D200AC2450 /* ArtworkView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -125,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				30AC3FCB2924AAA0005853A8 /* Artwork.swift */,
+				30DE7DCA2925E26A00AC2450 /* Public Art.geojson */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -216,6 +225,7 @@
 				30AC3FB029248372005853A8 /* LaunchScreen.storyboard in Resources */,
 				30AC3FAD29248372005853A8 /* Assets.xcassets in Resources */,
 				30AC3FA829248371005853A8 /* Main.storyboard in Resources */,
+				30DE7DCB2925E26A00AC2450 /* Public Art.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,8 +281,10 @@
 				30AC3FC62924931E005853A8 /* FiveViewController.swift in Sources */,
 				30AC3FA529248371005853A8 /* ViewController.swift in Sources */,
 				30AC3FA129248371005853A8 /* AppDelegate.swift in Sources */,
+				30DE7DCD2925E84600AC2450 /* ArtWorkViews.swift in Sources */,
 				30AC3FC82924A281005853A8 /* MapView.swift in Sources */,
 				30AC3FAB29248371005853A8 /* JaeHunApp.xcdatamodeld in Sources */,
+				30DE7DCF2925F3D200AC2450 /* ArtworkView.swift in Sources */,
 				30AC3FC22924920B005853A8 /* ThreeViewController.swift in Sources */,
 				30AC3FBE292491AD005853A8 /* OneViewController.swift in Sources */,
 				30AC3FCC2924AAA0005853A8 /* Artwork.swift in Sources */,
