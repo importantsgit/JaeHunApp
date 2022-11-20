@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02DB17F6DB3B3828FD757FA0 /* Pods_JaeHunApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E518517624300F9480D137BF /* Pods_JaeHunApp.framework */; };
 		30AC3FA129248371005853A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FA029248371005853A8 /* AppDelegate.swift */; };
 		30AC3FA329248371005853A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FA229248371005853A8 /* SceneDelegate.swift */; };
 		30AC3FA529248371005853A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FA429248371005853A8 /* ViewController.swift */; };
@@ -32,7 +31,24 @@
 		30DE7DE429268C2D00AC2450 /* BeerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DE7DE329268C2D00AC2450 /* BeerListCell.swift */; };
 		30DE7DE62926917300AC2450 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DE7DE52926917300AC2450 /* BeerDetailViewController.swift */; };
 		30DE7DE82926B7D900AC2450 /* MapDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DE7DE72926B7D900AC2450 /* MapDetailViewCell.swift */; };
+		30F8CEE8292A7D4900B7CBD4 /* Pods_JaeHunApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E518517624300F9480D137BF /* Pods_JaeHunApp.framework */; };
+		30F8CEE9292A7D4900B7CBD4 /* Pods_JaeHunApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E518517624300F9480D137BF /* Pods_JaeHunApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		30F8CEFF292A8EFE00B7CBD4 /* scaning.json in Resources */ = {isa = PBXBuildFile; fileRef = 30F8CEFE292A8EFD00B7CBD4 /* scaning.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30F8CEEA292A7D4A00B7CBD4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				30F8CEE9292A7D4900B7CBD4 /* Pods_JaeHunApp.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		30AC3F9D29248371005853A8 /* JaeHunApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JaeHunApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +77,7 @@
 		30DE7DE329268C2D00AC2450 /* BeerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListCell.swift; sourceTree = "<group>"; };
 		30DE7DE52926917300AC2450 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 		30DE7DE72926B7D900AC2450 /* MapDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailViewCell.swift; sourceTree = "<group>"; };
+		30F8CEFE292A8EFD00B7CBD4 /* scaning.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scaning.json; sourceTree = "<group>"; };
 		8F5FFD6C3B22CC199F7A6B4B /* Pods-JaeHunApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JaeHunApp.release.xcconfig"; path = "Target Support Files/Pods-JaeHunApp/Pods-JaeHunApp.release.xcconfig"; sourceTree = "<group>"; };
 		9DB724DF128DECB7967B0A06 /* Pods-JaeHunApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JaeHunApp.debug.xcconfig"; path = "Target Support Files/Pods-JaeHunApp/Pods-JaeHunApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E518517624300F9480D137BF /* Pods_JaeHunApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JaeHunApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02DB17F6DB3B3828FD757FA0 /* Pods_JaeHunApp.framework in Frameworks */,
+				30F8CEE8292A7D4900B7CBD4 /* Pods_JaeHunApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +122,7 @@
 				30AC3FBA29248471005853A8 /* ViewModel */,
 				30AC3FA029248371005853A8 /* AppDelegate.swift */,
 				30AC3FA229248371005853A8 /* SceneDelegate.swift */,
+				30F8CEFE292A8EFD00B7CBD4 /* scaning.json */,
 				30AC3FAC29248372005853A8 /* Assets.xcassets */,
 				30AC3FAE29248372005853A8 /* LaunchScreen.storyboard */,
 				30AC3FB129248372005853A8 /* Info.plist */,
@@ -229,12 +247,15 @@
 				30AC3F9A29248371005853A8 /* Frameworks */,
 				30AC3F9B29248371005853A8 /* Resources */,
 				240306E2639B6021509C2156 /* [CP] Embed Pods Frameworks */,
+				30F8CEEA292A7D4A00B7CBD4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = JaeHunApp;
+			packageProductDependencies = (
+			);
 			productName = JaeHunApp;
 			productReference = 30AC3F9D29248371005853A8 /* JaeHunApp.app */;
 			productType = "com.apple.product-type.application";
@@ -263,6 +284,8 @@
 				Base,
 			);
 			mainGroup = 30AC3F9429248371005853A8;
+			packageReferences = (
+			);
 			productRefGroup = 30AC3F9E29248371005853A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -280,6 +303,7 @@
 				30AC3FB029248372005853A8 /* LaunchScreen.storyboard in Resources */,
 				30AC3FAD29248372005853A8 /* Assets.xcassets in Resources */,
 				30DE7DCB2925E26A00AC2450 /* Public Art.geojson in Resources */,
+				30F8CEFF292A8EFE00B7CBD4 /* scaning.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

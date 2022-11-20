@@ -80,7 +80,7 @@ extension MapPullUpController {
         
         borderView.snp.makeConstraints{
             $0.height.equalTo(4)
-            $0.width.equalTo(300)
+            $0.width.equalTo(100)
             $0.center.equalToSuperview()
         }
         

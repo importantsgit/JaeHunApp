@@ -5,9 +5,12 @@ target 'JaeHunApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
+
+
   # Pods for JaeHunApp
-    pod 'SnapKit', '~> 5.6.0'
+    pod 'SnapKit'
     pod 'SOPullUpView'
-    pod 'Kingfisher', '~> 7.0'
+    pod 'Kingfisher'
+    pod 'lottie-ios'
 
 end

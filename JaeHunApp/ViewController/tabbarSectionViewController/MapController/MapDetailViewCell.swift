@@ -24,10 +24,10 @@ class MapDetailViewCell: UITableViewCell {
         }
         
         beerImageView.contentMode = .scaleAspectFit
-        nameLabel.font = .systemFont(ofSize: 18, weight: .bold)
+        nameLabel.font = .systemFont(ofSize: 16, weight: .bold)
         nameLabel.numberOfLines = 2
         
-        taglineLabel.font = .systemFont(ofSize: 14, weight: .light)
+        taglineLabel.font = .systemFont(ofSize: 12, weight: .light)
         taglineLabel.textColor = .systemGray
         taglineLabel.numberOfLines = 0
         
@@ -53,12 +53,12 @@ class MapDetailViewCell: UITableViewCell {
     
     func configure(with artwork: Artwork) {
         beerImageView.image = artwork.image
-        beerImageView.image = beerImageView.image?.withRenderingMode(.alwaysTemplate)
-        beerImageView.tintColor = artwork.markerTintColer
+//        beerImageView.image = beerImageView.image?.withRenderingMode(.alwaysTemplate)
+//        beerImageView.tintColor = artwork.markerTintColer
 //        let url = URL(string: artwork.imagefile ?? "")
 //        beerImageView.kf.setImage(with: url)
-        nameLabel.text = artwork.title
-        taglineLabel.text = artwork.description
+        nameLabel.text = artwork.discipline
+        taglineLabel.text = artwork.title 
         accessoryType = .disclosureIndicator
         selectionStyle = .none
     }

@@ -7,8 +7,19 @@
 
 import UIKit
 import SnapKit
+import Lottie
+import Kingfisher
 
 class TwoViewController: UIViewController {
+    
+    private var animationView: LottieAnimationView = {
+        var uiView = LottieAnimationView(frame: .zero)
+        uiView = .init(name: "scaning")
+        uiView.contentMode = .scaleAspectFit
+        uiView.loopMode = .loop
+        
+        return uiView
+    }()
     
     private lazy var button: UIButton = {
         let button = UIButton()
@@ -22,9 +33,9 @@ class TwoViewController: UIViewController {
     
     private var titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "QR코드 감별기"
+        label.text = "QR를 스캔해보세요"
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 36, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
         
         return label
     }()
@@ -32,11 +43,18 @@ class TwoViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        animationView.play()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        animationView.stop()
     }
     
     override func viewDidLoad() {
         setupLayout()
-        title = "카메라"
+        title = "QR Scanning"
+
     }
 }
 
@@ -44,12 +62,19 @@ extension TwoViewController {
     private func setupLayout() {
         view.backgroundColor = .systemBackground
         
-        [titleLabel, button ].forEach {
+        [animationView, titleLabel, button ].forEach {
             view.addSubview($0)
         }
         
+        animationView.snp.makeConstraints {
+            $0.centerX.centerY.equalToSuperview()
+            $0.width.equalTo(view.frame.width/2)
+            $0.height.equalTo(animationView.snp.width)
+        }
+        
         titleLabel.snp.makeConstraints{
-            $0.center.equalToSuperview()
+            $0.top.equalTo(animationView.snp.bottom).offset(16)
+            $0.centerX.equalToSuperview()
         }
         
         button.snp.makeConstraints{
@@ -58,6 +83,10 @@ extension TwoViewController {
             $0.trailing.equalToSuperview().inset(16)
             $0.height.equalTo(48)
         }
+    }
+    
+    private func fetchImage() {
+        let url = URL(string: "https://assets1.lottiefiles.com/packages/lf20_flav330e.json")
     }
     
     @objc private func buttonTap(_ sender: UIButton) {
