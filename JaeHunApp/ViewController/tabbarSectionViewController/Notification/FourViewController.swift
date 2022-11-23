@@ -22,9 +22,12 @@ class FourViewController: UITableViewController {
         title = "알람"
         tableView.register(AlertListCell.self, forCellReuseIdentifier: "AlertListCell")
         navigationItem.rightBarButtonItem = addButton
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
         
-
-        
+        self.navigationController?.navigationBar.prefersLargeTitles = false
     }
     
     lazy var addButton: UIBarButtonItem = {
