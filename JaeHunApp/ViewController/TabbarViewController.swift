@@ -28,7 +28,7 @@ class TabbarViewController: UITabBarController {
     
     private lazy var threeVC: UIViewController = {
         let viewController = UINavigationController(rootViewController: ThreeViewController())
-        let tabBarItem = UITabBarItem(title: "문제 클라우드", image: UIImage(named: "drink"), tag: 3)
+        let tabBarItem = UITabBarItem(title: "음료", image: UIImage(named: "drink"), tag: 3)
         viewController.tabBarItem = tabBarItem
         
         
@@ -37,7 +37,7 @@ class TabbarViewController: UITabBarController {
     
     private lazy var fourVC: UIViewController = {
         let viewController = UINavigationController(rootViewController: FourViewController())
-        let tabBarItem = UITabBarItem(title: "내 정보", image: UIImage(named: "profile_select"), tag: 4)
+        let tabBarItem = UITabBarItem(title: "알림", image: UIImage(named: "note"), tag: 4)
         viewController.tabBarItem = tabBarItem
         
         
@@ -55,7 +55,7 @@ class TabbarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewControllers = [oneVC, twoVC ,threeVC, fourVC, fiveVC]
+        viewControllers = [oneVC, twoVC ,threeVC,fourVC]
         view.backgroundColor = .systemBackground
         tabBarLayout()
     }

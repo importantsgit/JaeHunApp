@@ -84,10 +84,7 @@ extension TwoViewController {
             $0.height.equalTo(48)
         }
     }
-    
-    private func fetchImage() {
-        let url = URL(string: "https://assets1.lottiefiles.com/packages/lf20_flav330e.json")
-    }
+
     
     @objc private func buttonTap(_ sender: UIButton) {
         let vc = CameraViewController()

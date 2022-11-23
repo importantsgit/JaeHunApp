@@ -22,6 +22,11 @@
 		30AC3FC82924A281005853A8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FC72924A281005853A8 /* MapView.swift */; };
 		30AC3FCA2924A4CE005853A8 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FC92924A4CE005853A8 /* Shadow.swift */; };
 		30AC3FCC2924AAA0005853A8 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC3FCB2924AAA0005853A8 /* Artwork.swift */; };
+		30B2AAF1292B0CA0006CB133 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2AAF0292B0CA0006CB133 /* Alert.swift */; };
+		30B2AAF3292B0DE6006CB133 /* AlertListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2AAF2292B0DE6006CB133 /* AlertListCell.swift */; };
+		30B2AAF5292B11F0006CB133 /* AddAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2AAF4292B11F0006CB133 /* AddAlertViewController.swift */; };
+		30B2AAF7292B15A2006CB133 /* UNNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2AAF6292B15A2006CB133 /* UNNotificationCenter.swift */; };
+		30B3AFB2292E916F00C1385D /* sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 30B3AFB1292E916F00C1385D /* sound.wav */; };
 		30DE7DCB2925E26A00AC2450 /* Public Art.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 30DE7DCA2925E26A00AC2450 /* Public Art.geojson */; };
 		30DE7DCD2925E84600AC2450 /* ArtWorkViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DE7DCC2925E84600AC2450 /* ArtWorkViews.swift */; };
 		30DE7DCF2925F3D200AC2450 /* ArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DE7DCE2925F3D200AC2450 /* ArtworkView.swift */; };
@@ -32,23 +37,9 @@
 		30DE7DE62926917300AC2450 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DE7DE52926917300AC2450 /* BeerDetailViewController.swift */; };
 		30DE7DE82926B7D900AC2450 /* MapDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DE7DE72926B7D900AC2450 /* MapDetailViewCell.swift */; };
 		30F8CEE8292A7D4900B7CBD4 /* Pods_JaeHunApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E518517624300F9480D137BF /* Pods_JaeHunApp.framework */; };
-		30F8CEE9292A7D4900B7CBD4 /* Pods_JaeHunApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E518517624300F9480D137BF /* Pods_JaeHunApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		30F8CEFF292A8EFE00B7CBD4 /* scaning.json in Resources */ = {isa = PBXBuildFile; fileRef = 30F8CEFE292A8EFD00B7CBD4 /* scaning.json */; };
+		30F8CF02292AA7B200B7CBD4 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 30F8CF01292AA7B200B7CBD4 /* loading.json */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		30F8CEEA292A7D4A00B7CBD4 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				30F8CEE9292A7D4900B7CBD4 /* Pods_JaeHunApp.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		30AC3F9D29248371005853A8 /* JaeHunApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JaeHunApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +59,11 @@
 		30AC3FC72924A281005853A8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		30AC3FC92924A4CE005853A8 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
 		30AC3FCB2924AAA0005853A8 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		30B2AAF0292B0CA0006CB133 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		30B2AAF2292B0DE6006CB133 /* AlertListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertListCell.swift; sourceTree = "<group>"; };
+		30B2AAF4292B11F0006CB133 /* AddAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlertViewController.swift; sourceTree = "<group>"; };
+		30B2AAF6292B15A2006CB133 /* UNNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNNotificationCenter.swift; sourceTree = "<group>"; };
+		30B3AFB1292E916F00C1385D /* sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = sound.wav; path = ../../../../../sound.wav; sourceTree = "<group>"; };
 		30DE7DCA2925E26A00AC2450 /* Public Art.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Public Art.geojson"; sourceTree = "<group>"; };
 		30DE7DCC2925E84600AC2450 /* ArtWorkViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWorkViews.swift; sourceTree = "<group>"; };
 		30DE7DCE2925F3D200AC2450 /* ArtworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkView.swift; sourceTree = "<group>"; };
@@ -78,6 +74,7 @@
 		30DE7DE52926917300AC2450 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 		30DE7DE72926B7D900AC2450 /* MapDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailViewCell.swift; sourceTree = "<group>"; };
 		30F8CEFE292A8EFD00B7CBD4 /* scaning.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scaning.json; sourceTree = "<group>"; };
+		30F8CF01292AA7B200B7CBD4 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		8F5FFD6C3B22CC199F7A6B4B /* Pods-JaeHunApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JaeHunApp.release.xcconfig"; path = "Target Support Files/Pods-JaeHunApp/Pods-JaeHunApp.release.xcconfig"; sourceTree = "<group>"; };
 		9DB724DF128DECB7967B0A06 /* Pods-JaeHunApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JaeHunApp.debug.xcconfig"; path = "Target Support Files/Pods-JaeHunApp/Pods-JaeHunApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E518517624300F9480D137BF /* Pods_JaeHunApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JaeHunApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,13 +113,14 @@
 		30AC3F9F29248371005853A8 /* JaeHunApp */ = {
 			isa = PBXGroup;
 			children = (
+				30B3AFAD292E776800C1385D /* Service */,
 				30AC3FB729248429005853A8 /* ViewController */,
 				30AC3FB829248438005853A8 /* View */,
 				30AC3FB929248458005853A8 /* Model */,
 				30AC3FBA29248471005853A8 /* ViewModel */,
 				30AC3FA029248371005853A8 /* AppDelegate.swift */,
 				30AC3FA229248371005853A8 /* SceneDelegate.swift */,
-				30F8CEFE292A8EFD00B7CBD4 /* scaning.json */,
+				30B3AFAE292E808000C1385D /* asset */,
 				30AC3FAC29248372005853A8 /* Assets.xcassets */,
 				30AC3FAE29248372005853A8 /* LaunchScreen.storyboard */,
 				30AC3FB129248372005853A8 /* Info.plist */,
@@ -154,6 +152,7 @@
 		30AC3FB929248458005853A8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				30B2AAEF292B0C89006CB133 /* AlertModel */,
 				30DE7DE0292677BB00AC2450 /* BeerModel */,
 				30DE7DDF292677A400AC2450 /* MapModel */,
 				30AC3FA929248371005853A8 /* JaeHunApp.xcdatamodeld */,
@@ -166,6 +165,42 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		30B2AAEE292B0C62006CB133 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				30AC3FC32924922A005853A8 /* FourViewController.swift */,
+				30B2AAF4292B11F0006CB133 /* AddAlertViewController.swift */,
+				30B2AAF2292B0DE6006CB133 /* AlertListCell.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		30B2AAEF292B0C89006CB133 /* AlertModel */ = {
+			isa = PBXGroup;
+			children = (
+				30B2AAF0292B0CA0006CB133 /* Alert.swift */,
+			);
+			path = AlertModel;
+			sourceTree = "<group>";
+		};
+		30B3AFAD292E776800C1385D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				30B2AAF6292B15A2006CB133 /* UNNotificationCenter.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		30B3AFAE292E808000C1385D /* asset */ = {
+			isa = PBXGroup;
+			children = (
+				30F8CEFE292A8EFD00B7CBD4 /* scaning.json */,
+				30F8CF01292AA7B200B7CBD4 /* loading.json */,
+				30B3AFB1292E916F00C1385D /* sound.wav */,
+			);
+			path = asset;
 			sourceTree = "<group>";
 		};
 		30DE7DD429261CC800AC2450 /* MapController */ = {
@@ -181,12 +216,10 @@
 		30DE7DD529261CE000AC2450 /* tabbarSectionViewController */ = {
 			isa = PBXGroup;
 			children = (
-				30DE7DD629261D1400AC2450 /* Camera */,
 				30DE7DD429261CC800AC2450 /* MapController */,
-				30AC3FC12924920B005853A8 /* ThreeViewController.swift */,
-				30DE7DE52926917300AC2450 /* BeerDetailViewController.swift */,
-				30DE7DE329268C2D00AC2450 /* BeerListCell.swift */,
-				30AC3FC32924922A005853A8 /* FourViewController.swift */,
+				30DE7DD629261D1400AC2450 /* Camera */,
+				30F8CF00292AA30700B7CBD4 /* BeerList */,
+				30B2AAEE292B0C62006CB133 /* Notification */,
 				30AC3FC52924931E005853A8 /* FiveViewController.swift */,
 			);
 			path = tabbarSectionViewController;
@@ -218,6 +251,16 @@
 			path = BeerModel;
 			sourceTree = "<group>";
 		};
+		30F8CF00292AA30700B7CBD4 /* BeerList */ = {
+			isa = PBXGroup;
+			children = (
+				30AC3FC12924920B005853A8 /* ThreeViewController.swift */,
+				30DE7DE52926917300AC2450 /* BeerDetailViewController.swift */,
+				30DE7DE329268C2D00AC2450 /* BeerListCell.swift */,
+			);
+			path = BeerList;
+			sourceTree = "<group>";
+		};
 		6795D96DE5AB46C2DB0E2B85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,7 +290,6 @@
 				30AC3F9A29248371005853A8 /* Frameworks */,
 				30AC3F9B29248371005853A8 /* Resources */,
 				240306E2639B6021509C2156 /* [CP] Embed Pods Frameworks */,
-				30F8CEEA292A7D4A00B7CBD4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -300,9 +342,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30F8CF02292AA7B200B7CBD4 /* loading.json in Resources */,
 				30AC3FB029248372005853A8 /* LaunchScreen.storyboard in Resources */,
 				30AC3FAD29248372005853A8 /* Assets.xcassets in Resources */,
 				30DE7DCB2925E26A00AC2450 /* Public Art.geojson in Resources */,
+				30B3AFB2292E916F00C1385D /* sound.wav in Resources */,
 				30F8CEFF292A8EFE00B7CBD4 /* scaning.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,6 +408,7 @@
 				30DE7DE62926917300AC2450 /* BeerDetailViewController.swift in Sources */,
 				30DE7DD829261EC000AC2450 /* CameraViewController.swift in Sources */,
 				30DE7DCD2925E84600AC2450 /* ArtWorkViews.swift in Sources */,
+				30B2AAF1292B0CA0006CB133 /* Alert.swift in Sources */,
 				30AC3FC82924A281005853A8 /* MapView.swift in Sources */,
 				30DE7DD329260C9F00AC2450 /* MapPullUpController.swift in Sources */,
 				30AC3FAB29248371005853A8 /* JaeHunApp.xcdatamodeld in Sources */,
@@ -372,11 +417,14 @@
 				30AC3FBE292491AD005853A8 /* OneViewController.swift in Sources */,
 				30AC3FCC2924AAA0005853A8 /* Artwork.swift in Sources */,
 				30AC3FC0292491DE005853A8 /* TwoViewController.swift in Sources */,
+				30B2AAF3292B0DE6006CB133 /* AlertListCell.swift in Sources */,
 				30AC3FBC2924912B005853A8 /* TabbarViewController.swift in Sources */,
 				30AC3FCA2924A4CE005853A8 /* Shadow.swift in Sources */,
+				30B2AAF7292B15A2006CB133 /* UNNotificationCenter.swift in Sources */,
 				30DE7DE82926B7D900AC2450 /* MapDetailViewCell.swift in Sources */,
 				30AC3FA329248371005853A8 /* SceneDelegate.swift in Sources */,
 				30AC3FC42924922A005853A8 /* FourViewController.swift in Sources */,
+				30B2AAF5292B11F0006CB133 /* AddAlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +582,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				"OTHER_CODE_SIGN_FLAGS[sdk=*]" = "--generate-entitlement-der";
 				PRODUCT_BUNDLE_IDENTIFIER = "-23.JaeHunApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -568,6 +617,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				"OTHER_CODE_SIGN_FLAGS[sdk=*]" = "--generate-entitlement-der";
 				PRODUCT_BUNDLE_IDENTIFIER = "-23.JaeHunApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

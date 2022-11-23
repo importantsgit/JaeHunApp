@@ -99,13 +99,13 @@ class Artwork: NSObject, MKAnnotation { // MKAnnotation -> 마커
         
         switch name {
             case "Monument":
-            return UIImage(named: "Monument")!
+            return UIImage(named: "mountain")!
             case "Mural":
-                return UIImage(named: "Mural")!
+                return UIImage(named: "mural")!
             case "Plaque":
-                return UIImage(named: "Plaque")!
+                return UIImage(named: "plaque")!
             case "Sculpture" :
-                return UIImage(named: "Sculpture")!
+                return UIImage(named: "sculpture")!
             default:
                 return UIImage(named: "location")!
         }

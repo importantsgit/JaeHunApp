@@ -8,8 +8,10 @@
 import UIKit
 import SnapKit
 import Kingfisher
+import Lottie
 
 class BeerListCell: UITableViewCell {
+    
     let beerImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
@@ -49,7 +51,7 @@ extension BeerListCell {
             $0.centerY.equalToSuperview()
             $0.leading.top.bottom.equalToSuperview().inset(20)
             $0.width.equalTo(80)
-            $0.height.equalTo(100)
+            $0.height.equalTo(80)
         }
         
         nameLabel.snp.makeConstraints {
@@ -66,7 +68,7 @@ extension BeerListCell {
     
     func configure(with beer: Beer) {
         let imageURL = URL(string: beer.imageURL ?? "")
-        beerImageView.kf.setImage(with: imageURL, placeholder: UIImage(named: "drink")
+        beerImageView.kf.setImage(with: imageURL, placeholder: UIImage(named:"drink")
                                   //,options: [.transition(.fade(0.5)),  .forceTransition]
         )
         nameLabel.text = beer.name ?? "알 수 없는 맥주"

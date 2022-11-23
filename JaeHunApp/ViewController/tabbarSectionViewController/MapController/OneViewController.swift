@@ -32,6 +32,7 @@ class OneViewController: UIViewController {
         mapView.addArtWork(artworks: artworks)
         pullUpControl.dataSource = self
         pullUpControl.setupCard(from: view)
+        navigationController?.isNavigationBarHidden = true
 
     }
 }
