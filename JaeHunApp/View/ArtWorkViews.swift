@@ -22,6 +22,12 @@ class ArtworkMarkerView: MKMarkerAnnotationView {
             calloutOffset = CGPoint(x: -5, y: 5)
             rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
             
+            let mapsButton = UIButton(frame: CGRect(
+              origin: CGPoint.zero,
+              size: CGSize(width: 48, height: 48)))
+            mapsButton.setBackgroundImage(UIImage(named: "Map"), for: .normal)
+            rightCalloutAccessoryView = mapsButton
+            
             //2 buttonColor
             markerTintColor = artwork.markerTintColer
             if let letter = artwork.discipline?.first {

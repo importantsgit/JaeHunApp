@@ -35,7 +35,7 @@ class Artwork: NSObject, MKAnnotation { // MKAnnotation -> 마커
         super.init()
     }
     
-    init?(feature: MKGeoJSONFeature){ // 지형지물을 모양으로 나타냄
+    init?(feature: MKGeoJSONFeature){ // 지형지물을 모양으로 나타냄 & Json형식 디코딩
         //1 ->
         guard
             let point = feature.geometry.first as? MKPointAnnotation,
@@ -65,7 +65,7 @@ class Artwork: NSObject, MKAnnotation { // MKAnnotation -> 마커
             return nil
         }
         
-        let addressDict = [CNPostalAddressStreetKey: location]
+        let addressDict = [CNPostalAddressStreetKey: location] // 제목
         let placemark = MKPlacemark(
             coordinate: coordinate,
             addressDictionary: addressDict

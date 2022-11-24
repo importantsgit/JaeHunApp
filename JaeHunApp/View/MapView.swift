@@ -31,6 +31,7 @@ class MapView: UIView {
         map.delegate = self
         map.register(ArtworkView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
         //MARK: 등록 통하여 새로운 마커를 생성 -> ArtworkViews
+        //MARK: 마커를 이미지로 바꾸기 위하여 -> ArtworkView
     }
     
 }

@@ -12,6 +12,7 @@ import MapKit
 class ArtworkView: MKAnnotationView {
     // 포인트를 처음부터 이렇게 만들기
     override var annotation: MKAnnotation? {
+        
         willSet {
             // 1
             //MARK: mapView( _:viewFor)와 같게
