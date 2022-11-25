@@ -21,4 +21,4 @@
         preFetching으로 데이터 미리 받아오기
         백그라운드로 옮겨와 처리함
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lrCbyLEfl7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Video Label](http://img.youtube.com/vi/uLR1RNqJ1Mw/0.jpg)](https://youtu.be/lrCbyLEfl7M)
