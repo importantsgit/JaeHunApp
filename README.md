@@ -21,4 +21,4 @@
         preFetching으로 데이터 미리 받아오기
         백그라운드로 옮겨와 처리함
 
-[![Video Label](http://img.youtube.com/vi/uLR1RNqJ1Mw/0.jpg)](https://youtu.be/lrCbyLEfl7M)
+[![Video Label](http://img.youtube.com/vi/lrCbyLEfl7M/0.jpg)](https://youtu.be/lrCbyLEfl7M)
