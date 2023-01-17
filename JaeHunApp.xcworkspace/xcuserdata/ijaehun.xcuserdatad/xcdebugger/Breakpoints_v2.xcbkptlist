@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E1120E6E-68F2-4E9D-934B-3EEC0E511CF8"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5EF26A49-E118-4063-BCBD-C719B9736800"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/AppAuth/Source/AppAuth/iOS/OIDExternalUserAgentIOS.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "OIDExternalUserAgentIOS"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A0F76694-9060-44C8-92CC-C8638DFB5500"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/lottie-ios/Sources/Public/iOS/AnimatedButton.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "init()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A0F76694-9060-44C8-92CC-C8638DFB5500 - 65fe98abb76463d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lottie.AnimatedButton.init() -&gt; Lottie.AnimatedButton"
+                  moduleName = "Lottie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ijaehun/Desktop/RxSwift/JaeHunApp/JaeHunApp/Pods/lottie-ios/Sources/Public/iOS/AnimatedButton.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "191">
+               </Location>
+               <Location
+                  uuid = "A0F76694-9060-44C8-92CC-C8638DFB5500 - 65fe98abb76463d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lottie.AnimatedButton.init() -&gt; Lottie.AnimatedButton"
+                  moduleName = "Lottie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ijaehun/Desktop/RxSwift/JaeHunApp/JaeHunApp/Pods/lottie-ios/Sources/Public/iOS/AnimatedButton.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
